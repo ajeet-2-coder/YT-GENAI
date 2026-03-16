@@ -1,0 +1,53 @@
+// src/features/auth/components/navbar.scss
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a2e;
+    border-bottom: 1px solid #2a2a4a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    &__logo {
+        a {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+
+            &:hover {
+                color: #a78bfa;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__username {
+        color: #a0a0c0;
+        font-size: 0.95rem;
+    }
+
+    &__logout-btn {
+        padding: 0.4rem 1.2rem;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #c0392b;
+        }
+    }
+}
